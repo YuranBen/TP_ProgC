@@ -6,11 +6,11 @@ int main()
   
   double rayon;
   printf("entrez votre rayon : \n");
-  scanf("%f",&rayon);
+  scanf("%lf",&rayon);
 
   double aire = M_PI * rayon * rayon;
   double perimetre = 2 * M_PI * rayon;
 
-  printf("aire du cercle %f \n",&aire);
-  printf("perimetre du cercle %f \n",&perimetre);
+  printf("aire du cercle %lf \n",&aire);
+  printf("perimetre du cercle %lf \n",&perimetre);
 }
