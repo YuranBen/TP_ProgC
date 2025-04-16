@@ -5,7 +5,7 @@ int main()
 {
   int num1,num2;
   char op;
-  int res;
+  float res;
 
   printf("entrez l'opérateur : \n");
   scanf("%c",&op);
@@ -47,5 +47,5 @@ int main()
       printf("Mauvais opérateur \n");
       break;
     }
-  printf("resultat = \n",res);
+  printf("resultat = %f\n",res);
 }
