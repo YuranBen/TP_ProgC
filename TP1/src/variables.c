@@ -10,9 +10,9 @@ int main()
     short s = 4;
     unsigned short s1 = 5;
     long int l = 6;
-    unsigned long int l1 = 7;
+    long unsigned int l1 = 7;
     long long int li = 8;
-    unsigned long long int li1 = 9;
+    long long int unsigned li1 = 9;
 
     float f = 10.1;
     double d = 11.2;
