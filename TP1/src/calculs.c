@@ -47,4 +47,5 @@ int main()
       printf("Mauvais opérateur \n");
       break;
     }
+  printf("resultat = \n",res);
 }
