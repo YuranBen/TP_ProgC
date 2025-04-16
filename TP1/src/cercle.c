@@ -3,8 +3,9 @@
 
 int main()
 {
+  
   double rayon;
-  printf("entrez votre rayon : ");
+  printf("entrez votre rayon : \n");
   scanf("%f",&rayon);
 
   double aire = M_PI * rayon * rayon;
