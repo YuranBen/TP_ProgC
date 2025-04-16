@@ -40,9 +40,10 @@ int main()
       res = num1 | num2;
       break;
     case '~':
-      res = num1; ~num2;
+     
       break;
     default:
       printf("Mauvais opérateur \n");
+      break;
     }
 }
