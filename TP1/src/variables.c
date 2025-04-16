@@ -22,7 +22,7 @@ int main()
     printf("char : %c et unsigned char : %u\n", c,c1);
     printf("int : %d et unsigned int : %u\n", i,i1);
     printf("short : %hd et unsigned short : %u\n", s,s1);
-    printf("long : %ld et unsigned long : %u\n", li,l1);
+    printf("long : %ld et unsigned long : %u\n", l,l1);
     printf("long long : %ld et unsigned long : %u\n", li,li1);
     printf("float : %f\n", f);
     printf("double : %f\n", d);
