@@ -3,7 +3,7 @@
 int main()
 {
 
-    char c = "a";
+    char c = a;
     unsigned char c1 = 1;
     int i = 2;
     unsigned int i1 = 3;
