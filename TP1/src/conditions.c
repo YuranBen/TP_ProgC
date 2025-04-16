@@ -23,5 +23,5 @@ int main()
       break;
     }
   }
-  printf("resultat : %d",somme);
+  printf("resultat : %d \n",somme);
 }
