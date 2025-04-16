@@ -44,6 +44,5 @@ int main()
       break;
     default:
       printf("Mauvais opérateur \n");
-      break;
     }
 }
