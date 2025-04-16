@@ -1,4 +1,4 @@
-#include <std.io>
+#include <stdi.o>
 #include <std.lib>
 
 int main()
