@@ -14,6 +14,6 @@ int main()
   bool comp = a == b;
   bool comp2 = a > b;
 
-  printf("%d, %d, %d, %d, %d",add,sus,mul,div,res);
+  printf("%d, %d, %d, %d, %d, %d, %d\n",add,sus,mul,div,res,comp,comp2);
 
 }
