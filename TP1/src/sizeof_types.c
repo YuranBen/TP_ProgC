@@ -2,15 +2,23 @@
 
 int main()
 {
-    cout << "sizeof(unsigned char) = " << sizeof(unsigned char) << endl;
-    cout << "sizeof(signed char) = " << sizeof(signed char) << endl;
-    cout << "sizeof(unsigned short) = " << sizeof(short) << endl;
-    cout << "sizeof(short) = " << sizeof(short int) << endl;
-    cout << "sizeof(int) = " << sizeof(int) << endl;
-    cout << "sizeof(long int) = " << sizeof(long int) << endl;
-    cout << "sizeof(long long int) = " << sizeof(long long int) << endl;
-    cout << "sizeof(float) = " << sizeof(float) << endl;
-    cout << "sizeof(double) = " << sizeof(double) << endl;
-    cout << "sizeof(long double) = " << sizeof(long double) << endl;
+    printf("char : %d octets\n", sizeof(signed char));
+    printf("unsigned char : %d octets\n", sizeof(unsigned char));
+    
+    printf("int : %d octets\n", sizeof(signed int));
+    printf("unsigned int : %d octets\n", sizeof(unsigned int));
+    
+    printf("long : %d octets\n", sizeof(signed long int));
+    printf("unsigned long : %d octets\n", sizeof(unsigned long int));
+    
+    printf("short : %d octets\n", sizeof(signed short));
+    printf("unsigned short : %d octets\n", sizeof(unsigned short));
+
+    printf("long long : %d octets\n", sizeof(signed long long int));
+    printf("unsigned long long : %d octets\n", sizeof(unsigned long long int));
+    
+    printf("double : %d octets\n", sizeof(double));
+    printf("float : %d octets\n", sizeof(float));
+    printf("long double : %d octets\n", sizeof(long double));
 }
   
