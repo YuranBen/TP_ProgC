@@ -11,6 +11,6 @@ int main()
   double aire = M_PI * rayon * rayon;
   double perimetre = 2 * M_PI * rayon;
 
-  printf("aire du cercle %lf \n",&aire);
-  printf("perimetre du cercle %lf \n",&perimetre);
+  printf("aire du cercle %lf \n",aire);
+  printf("perimetre du cercle %lf \n",perimetre);
 }
