@@ -10,7 +10,7 @@ int main()
 
   for(i=0;i<b;i++)
   {
-    pui=a*a;
+    pui=pui*a;
   }
 
   printf("resultat = %d \n",pui);
