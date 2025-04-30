@@ -7,8 +7,8 @@ int main()
   int d4 = d << 4;
   int d20 = d << 20;
 
-  printf("%d",d4);
-  printf("%d",d20);
+  printf("d4 = %d \n",d4);
+  printf("d20 = %d \n",d20);
 
   if(d4 == 1 && d20 == 1)
   {
