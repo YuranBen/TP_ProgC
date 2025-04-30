@@ -12,10 +12,17 @@ int main()
   printf("Entrez n : \n");
   scanf("%d",&n);
 
-  for(i=0;i<n+1;i++)
+  if (n >= 0)
+    printf("u0 = %d\n", u0);
+  if (n >= 1)
+    printf("u1 = %d\n", u1);
+
+  for(i=2;i<=n;i++)
   {
-    un = u0*(i-1) + u1*(i-2);
+    un = u0+u1;
     printf("u%d = %d \n",i,un);
+    u0 = u1;
+    u1 = un
   }
 return EXIT_SUCCESS;
 }
