@@ -22,7 +22,7 @@ int main()
     un = u0+u1;
     printf("u%d = %d \n",i,un);
     u0 = u1;
-    u1 = un
+    u1 = un;
   }
 return EXIT_SUCCESS;
 }
