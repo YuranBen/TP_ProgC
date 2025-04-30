@@ -13,7 +13,7 @@ int main()
     pui=a*b;
   }
 
-  printf("resultat = %u",&pui);
+  printf("resultat = %d",&pui);
 
   return EXIT_SUCCESS;
 }
