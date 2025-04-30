@@ -9,10 +9,10 @@ int main()
 
   if(d4 && d20 == 1)
   {
-    printf("1");
+    printf("1 \n");
   }
   else
   {
-    printf("0");
+    printf("0 \n");
   }
 }
