@@ -5,8 +5,9 @@ int main()
 {
   int u0 = 0;
   int u1 = 1;
-  int un = 0;
-  int n = 0;
+  int un;
+  int n;
+  int i;
 
   printf("Entrez n : \n");
   scanf("%d",&n);
