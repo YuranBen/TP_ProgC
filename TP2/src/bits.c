@@ -7,7 +7,7 @@ int main()
   int d4 = d << 4;
   int d20 = d << 20;
 
-  if(d4 && d20 == 1)
+  if(d4 == 1 && d20 == 1)
   {
     printf("1 \n");
   }
