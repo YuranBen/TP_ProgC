@@ -8,7 +8,7 @@ int main()
   int pui = a;
   int i;
 
-  for(i=0;i<b+1;i++)
+  for(i=0;i<b-1;i++)
   {
     pui=pui*a;
   }
