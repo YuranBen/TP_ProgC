@@ -3,7 +3,7 @@
 
 int main()
 {
-  int d = 16;
+  int d = 268439552;
   int d4 = d << 4;
   int d20 = d << 20;
 
