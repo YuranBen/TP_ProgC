@@ -5,7 +5,7 @@ int main()
 {
   int d = 8;
   int d4 = d << 4;
-  int d20 = << 20;
+  int d20 = d << 20;
 
   if(d4 && d20 == 1)
   {
