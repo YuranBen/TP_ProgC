@@ -5,7 +5,7 @@ int main()
 {
   int a = 2;
   int b = 4;
-  int pui;
+  int pui = a;
   int i;
 
   for(i=0;i<b;i++)
