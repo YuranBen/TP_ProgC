@@ -14,7 +14,7 @@ int main()
 
   for(i=0;i<n-1;i++)
   {
-    un = un*(i-1) + un*(i-2);
+    un = u0*(i-1) + u1*(i-2);
     printf("u%d = %d \n",i,un);
   }
 return EXIT_SUCCESS;
