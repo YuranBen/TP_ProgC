@@ -51,44 +51,16 @@ int recois_envoie_message(int client_socket_fd, char *data)
 {
   printf("Message reçu: %s\n", data);
   char code[10];
-
-  if (sscanf(data, "%9[^:]:", code) == 1) // Lire jusqu'à ':' pour capturer le "code"
+  if (sscanf(data, "%9s:", code) == 1) // Assurez-vous que le format est correct
   {
-    if (strcmp(code, "message") == 0)
+    if (strcmp(code, "message:") == 0)
     {
-      // Demander une réponse à l'utilisateur (côté serveur)
-      char reponse[1024];
-      printf("Entrez une réponse à envoyer au client : ");
-      if (fgets(reponse, sizeof(reponse), stdin) != NULL)
-      {
-        // Supprimer le saut de ligne si présent
-        size_t len = strlen(reponse);
-        if (len > 0 && reponse[len - 1] == '\n')
-        {
-          reponse[len - 1] = '\0';
-        }
-
-        // Envoyer la réponse au client
-        int result = write(client_socket_fd, reponse, strlen(reponse));
-        if (result < 0)
-        {
-          perror("Erreur d'envoi de la réponse");
-          return EXIT_FAILURE;
-        }
-        return EXIT_SUCCESS;
-      }
-      else
-      {
-        perror("Erreur de lecture de la réponse utilisateur");
-        return EXIT_FAILURE;
-      }
+      return renvoie_message(client_socket_fd, data);
     }
   }
 
-  return EXIT_SUCCESS;
+  return (EXIT_SUCCESS);
 }
-
-
 
 /**
  * Gestionnaire de signal pour Ctrl+C (SIGINT).
@@ -231,7 +203,3 @@ int main()
       close(client_socket_fd); // Fermer le socket du client dans le processus parent
     }
   }
-
-  // Le programme ne devrait jamais atteindre cette ligne dans la boucle infinie
-  return 0;
-}
